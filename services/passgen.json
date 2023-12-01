@@ -48,7 +48,7 @@
       "name": "generateWithPasswordinator",
       "type": "method",
       "description": "",
-      "body": "fetch('https://passwordinator.onrender.com')\n.then((res) => res.json())\n.then((data) => { return data })",
+      "body": "fetch('https://passwordinator.onrender.com')\n.then((res) => res.json())\n.then((data) => {document.getElementById('passwordh1').innerHTML = JSON.stringify(data.data)})",
       "invokeOnLoad": false,
       "isAsync": false,
       "returnType": {
@@ -144,6 +144,10 @@
       "23": "t",
       "24": "o",
       "25": "r"
-    }
+    },
+    "generateWithPasswordinator",
+    "generateUsingApi",
+    "generatePassword",
+    "password"
   ]
 }

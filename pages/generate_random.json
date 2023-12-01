@@ -11,10 +11,10 @@
       "value": ""
     },
     {
-      "name": "genrand",
+      "name": "generatePassword",
       "type": "method",
       "description": "",
-      "body": "$ctrl.password = $ctrl.passgen.generatePassword(20, false, true, true)\r\n$ctrl.passwordFromPasswordinator = $ctrl.passgen.generateWithPasswordinator()\r\n",
+      "body": "$ctrl.passwordFromPasswordinator = $ctrl.passgen.generateWithPasswordinator()\r\n$ctrl.password = $ctrl.passgen.generatePassword(20, false, true, true)\r\n",
       "invokeOnLoad": true,
       "isAsync": false,
       "returnType": {
@@ -23,15 +23,15 @@
       "parameters": []
     },
     {
-      "name": "passgen",
-      "type": "service",
-      "id": "656950fb43740894c55ed55e"
-    },
-    {
       "name": "passwordFromPasswordinator",
       "type": "property",
       "description": "",
       "value": ""
+    },
+    {
+      "name": "passgen",
+      "type": "service",
+      "id": "6569772d43740894c55ed567"
     }
   ],
   "children": [
@@ -70,7 +70,7 @@
           "to": "label"
         },
         {
-          "expression": "$ctrl.genrand()",
+          "expression": "$ctrl.generatePassword()",
           "to": "onClick"
         }
       ]
@@ -228,17 +228,13 @@
           },
           "children": [
             {
-              "name": "Badge",
-              "nodeName": "bln-badge",
-              "elementId": "",
+              "name": "h1",
+              "nodeName": "h1",
+              "elementId": "passwordh1",
               "attributes": [
                 {
                   "property": "data-id",
-                  "value": "tqbId5"
-                },
-                {
-                  "property": "core",
-                  "value": ""
+                  "value": "bp0q97"
                 }
               ],
               "classList": [],
@@ -252,16 +248,15 @@
                 "trackByIndex": false
               },
               "styles": [],
-              "children": [],
-              "comments": "",
-              "type": "core-component",
-              "id": "badge",
-              "expressions": [
+              "children": [
                 {
-                  "expression": "$ctrl.passwordFromPasswordinator",
-                  "to": "text"
+                  "name": "text",
+                  "nodeName": "text",
+                  "textContent": "h1",
+                  "evaluate": false
                 }
-              ]
+              ],
+              "comments": ""
             }
           ],
           "comments": ""
