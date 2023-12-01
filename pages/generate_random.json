@@ -1,0 +1,302 @@
+{
+  "name": "generate_random",
+  "type": "page",
+  "url": "/generate_ranodm",
+  "params": {},
+  "variables": [
+    {
+      "name": "password",
+      "type": "property",
+      "description": "",
+      "value": ""
+    },
+    {
+      "name": "genrand",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.password = $ctrl.passgen.generatePassword(20, false, true, true)\r\n$ctrl.passwordFromPasswordinator = $ctrl.passgen.generateWithPasswordinator()\r\n",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "passgen",
+      "type": "service",
+      "id": "656950fb43740894c55ed55e"
+    },
+    {
+      "name": "passwordFromPasswordinator",
+      "type": "property",
+      "description": "",
+      "value": ""
+    }
+  ],
+  "children": [
+    {
+      "name": "Button",
+      "nodeName": "bln-button",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "gwSP0D"
+        },
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "id": "button",
+      "expressions": [
+        {
+          "expression": "\"Generate\"",
+          "to": "label"
+        },
+        {
+          "expression": "$ctrl.genrand()",
+          "to": "onClick"
+        }
+      ]
+    },
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "shWP37"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100% !important"
+        },
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100% !important"
+        }
+      ],
+      "layout": {
+        "container": {
+          "type": "grid",
+          "columns": [
+            {
+              "type": "span",
+              "value": 1
+            },
+            {
+              "type": "span",
+              "value": 1
+            }
+          ],
+          "rows": [
+            {
+              "type": "span",
+              "value": 1
+            },
+            {
+              "type": "span",
+              "value": 1
+            }
+          ],
+          "items": []
+        }
+      },
+      "children": [
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "MMK0ke"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "layout": {
+            "cell": {
+              "type": "grid-item"
+            }
+          },
+          "children": [
+            {
+              "name": "Badge",
+              "nodeName": "bln-badge",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "TpJPLz"
+                },
+                {
+                  "property": "core",
+                  "value": ""
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [],
+              "children": [],
+              "comments": "",
+              "type": "core-component",
+              "id": "badge",
+              "expressions": [
+                {
+                  "expression": "$ctrl.password",
+                  "to": "text"
+                }
+              ]
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "Mc8R_J"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "layout": {
+            "cell": {
+              "type": "grid-item"
+            }
+          },
+          "children": [
+            {
+              "name": "Badge",
+              "nodeName": "bln-badge",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "tqbId5"
+                },
+                {
+                  "property": "core",
+                  "value": ""
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [],
+              "children": [],
+              "comments": "",
+              "type": "core-component",
+              "id": "badge",
+              "expressions": [
+                {
+                  "expression": "$ctrl.passwordFromPasswordinator",
+                  "to": "text"
+                }
+              ]
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "LbHztH"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "layout": {
+            "cell": {
+              "type": "grid-item"
+            }
+          },
+          "children": [],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    }
+  ]
+}

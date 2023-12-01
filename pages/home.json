@@ -1,0 +1,57 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [],
+  "children": [
+    {
+      "name": "Calendar",
+      "nodeName": "bln-calendar",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "KPRywU"
+        },
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "id": "calendar",
+      "expressions": [
+        {
+          "expression": "\"timeGridWeek\"",
+          "to": "type"
+        },
+        {
+          "expression": "true",
+          "to": "enableEventEditing"
+        },
+        {
+          "expression": "true",
+          "to": "enableRepeatingEvents"
+        },
+        {
+          "expression": "[{\n    id: \"1\",\n    editable: true,\n    repeat: false,\n    title: \"Render Period\",\n    start: \"2023-11-17T11:37:32\",\n    end: \"2023-12-17\",\n    display: \"auto\"\n}]",
+          "to": "events"
+        }
+      ]
+    }
+  ]
+}

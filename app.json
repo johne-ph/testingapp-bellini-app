@@ -1,0 +1,21 @@
+{
+  "name": "testingapp",
+  "type": "app",
+  "defaultPage": "generate_random",
+  "config": {
+    "config": {
+      "parameters": [],
+      "script": ""
+    },
+    "modules": [],
+    "properties": {},
+    "themes": [],
+    "auth": {
+      "enabled": false,
+      "mockedUserAccounts": []
+    },
+    "environments": []
+  },
+  "externalScripts": [],
+  "externalStylesheets": []
+}
